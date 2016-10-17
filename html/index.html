@@ -1,0 +1,58 @@
+<html>
+    <body>
+      <h1>Automatic License Plate Reading Demo</h1>
+
+<p>Return to Rohit's home page: <a href="http://rohitrawat.com/">rohitrawat.com/</a></p>
+      <p>Upload a vehicle image. The image should be at least 500px tall and should ideally include most of the vehicle for things to work correctly.<p>
+	<p>This system was written for tollway images so it is ideal for images to be level and spanning one lane width, but it is robust to different kinds of images.</p>
+	<p>Since most of our training data was from Texas, the state identification will say Texas for most vehicles.</p>
+        <form ref='uploadForm'
+            id='uploadForm'
+            action='/upload'
+            method='post'
+            encType="multipart/form-data">
+                <input type="file" name="sampleFile" />
+                <input type='submit' value='Upload!' />
+        </form>
+	<p style="margin-top: 100px"></p>
+	<p>You can try these sample images if you don't have any saved on your computer already, or can't find any on the Internet. Save the image to your computer and then upload it. Feel free to crop/transform/rename to check the robustness.</p>
+<p>These images are being used for educational use only.</p>
+	<p>
+<img src="sample_images/input1.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input2.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input3.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input4.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input5.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input6.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input8.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input9.jpg" width="30%" style="margin:5px 5px"/>
+<img src="sample_images/input10.jpg" width="30%" style="margin:5px 5px"/>
+	</p>
+
+	<p style="margin-top: 100px"></p>
+<p>Sample run:</p>
+<p><br>
+<b>Result:  BGC2171, State:  <br>
+</b><br><br>            <img src="old/input_003.jpg" width="50%"><br>            ROIs:<br>            <img src="old/input_002.jpg" style="margin:5px 5px"><br>            Plates:<br>            <img src="old/input_004.jpg" style="margin:5px 5px"><br>            Segmentation:<br>            <img src="old/input.jpg" style="margin:5px 5px"><br>            <pre>#1 of 1: input.jpg<br>
+17  67<br>
+0.893428, 0.65183<br>
+32,94<br>
+32,94<br>
+33,94<br>
+32,94<br>
+31,94<br>
+30,93<br>
+Mid discovered: 147,295<br>
+Label = B prob = 1.000000<br>
+Label = G prob = 1.000000<br>
+Label = C prob = 1.000000<br>
+Label = 2 prob = 1.000000<br>
+Label = 1 prob = 1.000000<br>
+Label = 7 prob = 1.000000<br>
+Label = 1 prob = 1.000000<br>
+Plate reading: BGC2171, State: <br>
+Best Index: 0<br>
+Finished processing the folder.<br>
+<p>
+    </body>
+</html>
