@@ -4,8 +4,8 @@
 
 <p>Return to Rohit's home page: <a href="http://rohitrawat.com/">rohitrawat.com/</a></p>
       <p>Upload a vehicle image. The image should be at least 500px tall and should ideally include most of the vehicle for things to work correctly.<p>
-	<p>This system was written for tollway images so it is ideal for images to be level and spanning one lane width, but it is robust to different kinds of images.</p>
-	<p>Since most of our training data was from Texas, the state identification will say Texas for most vehicles.</p>
+	<p>This system was written for tollway images so it is best if images are level and spanning one lane width like the ones shown below, but it is still robust to different poses.</p>
+	<p>Since most of our training data was from Texas, the state identification will say Texas for most vehicles. Fonts from non-Texan plates may also not get recognized easily.</p>
         <form ref='uploadForm'
             id='uploadForm'
             action='/upload'
@@ -14,11 +14,12 @@
                 <input type="file" name="sampleFile" />
                 <input type='submit' value='Upload!' />
         </form>
+        <p>Tip: If you are visiting this page from a smartphone, the phone will allow you to click and upload a new image from its camera or allow you to upload a recent photo from the gallery.</p>
 	<p style="margin-top: 100px"></p>
 	<p>You can try these sample images if you don't have any saved on your computer already, or can't find any on the Internet.
     Save the image to your computer and then upload it. Feel free to crop/transform/rename to check the robustness.
   You can also download 100 sample images in a zip file <a href="sample_images/sample_images.zip">here</a>.</p>
-<p>These images are being used for educational use only.</p>
+<p>These images are provided here for educational fair use only.</p>
 	<p>
 <a href="sample_images/input1.jpg" download><img src="sample_images/input1.jpg" width="30%" style="margin:5px 5px"/></a>
 <a href="sample_images/input2.jpg" download><img src="sample_images/input2.jpg" width="30%" style="margin:5px 5px"/></a>
@@ -61,5 +62,6 @@ Best Index: 0<br>
 Finished processing the folder.<br>
 </pre>
 </p>
+<p><strong>This page is provided for private demonstration only. Abuse or commercial use of this page is prohibhited.</strong></p>
     </body>
 </html>
